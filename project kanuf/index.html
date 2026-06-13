@@ -20,21 +20,21 @@
 
     <nav class="fixed top-0 w-full p-6 flex justify-between items-center z-50 bg-[#0f172a]/90 backdrop-blur-md border-b border-[#c5a880]/10">
         <div class="text-2xl font-bold tracking-widest text-[#c5a880] flex items-center gap-2">
-            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
-            KUNUF
+            <img src="logo.png" alt="شعار كنوف" class="h-10 md:h-12 object-contain" onerror="this.style.display='none'">
+            <span class="hidden md:inline">KUNUF</span>
         </div>
         <div class="hidden md:flex space-x-8 space-x-reverse font-light text-sm">
-            <a href="#home" class="hover:text-[#c5a880] transition-colors">الرئيسية</a>
-            <a href="#about" class="hover:text-[#c5a880] transition-colors">من نحن</a>
-            <a href="#services" class="hover:text-[#c5a880] transition-colors">خدماتنا</a>
-            <a href="#projects" class="hover:text-[#c5a880] transition-colors">مشاريعنا</a>
-            <a href="#contact" class="hover:text-[#c5a880] transition-colors">تواصل معنا</a>
+            <a href="index.html" class="hover:text-[#c5a880] transition-colors text-[#c5a880]">الرئيسية</a>
+            <a href="about.html" class="hover:text-[#c5a880] transition-colors">من نحن</a>
+            <a href="services.html" class="hover:text-[#c5a880] transition-colors">خدماتنا</a>
+            <a href="projects.html" class="hover:text-[#c5a880] transition-colors">مشاريعنا</a>
+            <a href="contact.html" class="hover:text-[#c5a880] transition-colors">تواصل معنا</a>
         </div>
     </nav>
 
-    <header id="home" class="relative h-screen flex flex-col justify-center items-center text-center px-4 overflow-hidden">
+    <header class="relative h-screen flex flex-col justify-center items-center text-center px-4 overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1541888086425-d81bb19240f5?auto=format&fit=crop&w=1920&q=80" alt="Construction" class="w-full h-full object-cover opacity-20">
+            <img src="hero.jpg" alt="Construction" class="w-full h-full object-cover opacity-20 bg-gray-800">
             <div class="absolute inset-0 bg-gradient-to-b from-transparent to-[#0f172a]"></div>
         </div>
 
@@ -45,13 +45,13 @@
             <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
                 متخصصون في مجالات المقاولات العامة، العظم، التشطيبات، والأعمال الكهروميكانيكية برؤية هندسية متكاملة.
             </p>
-            <a href="#projects" class="glow-button inline-block px-8 py-4 rounded-2xl bg-[#1e293b]/80 border border-[#c5a880]/50 backdrop-blur-md text-[#c5a880] text-lg font-medium">
+            <a href="projects.html" class="glow-button inline-block px-8 py-4 rounded-2xl bg-[#1e293b]/80 border border-[#c5a880]/50 backdrop-blur-md text-[#c5a880] text-lg font-medium">
                 استكشف سابقة أعمالنا
             </a>
         </div>
     </header>
 
-    <section id="about" class="py-24 px-6 max-w-7xl mx-auto">
+    <section class="py-24 px-6 max-w-7xl mx-auto">
         <div class="flex flex-col md:flex-row items-center gap-16">
             <div class="md:w-1/2">
                 <h2 class="text-sm font-bold text-[#c5a880] tracking-widest mb-2">عن الشركة</h2>
@@ -61,19 +61,16 @@
                     نحن نسعى دائماً لتحقيق أعلى معايير الجودة في البناء والتطوير وفقاً لرؤية المملكة 2030، وذلك من خلال فرق عمل هندسية متكاملة تضمن جودة التنفيذ.
                 </p>
                 <div class="flex gap-4">
-                    <div class="border-r-2 border-[#c5a880] pr-4">
-                        <span class="block text-3xl font-bold text-white">2030</span>
-                        <span class="text-sm text-gray-500">متوافقون مع الرؤية</span>
-                    </div>
+                    <a href="about.html" class="text-[#c5a880] border-b border-[#c5a880] pb-1 hover:text-white transition">اقرأ المزيد عن قصتنا ←</a>
                 </div>
             </div>
             <div class="md:w-1/2">
-                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" class="rounded-3xl shadow-2xl border border-[#c5a880]/20" alt="About Kunuf">
+                <img src="about.jpg" class="rounded-3xl shadow-2xl border border-[#c5a880]/20 w-full h-auto bg-gray-800" alt="About Kunuf">
             </div>
         </div>
     </section>
 
-    <section id="services" class="py-24 bg-[#1e293b]/30">
+    <section class="py-24 bg-[#1e293b]/30">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-sm font-bold text-[#c5a880] tracking-widest mb-2">ماذا نقدم؟</h2>
@@ -96,80 +93,51 @@
                     <h4 class="text-xl font-bold mb-3">الأنظمة الكهروميكانيكية</h4>
                     <p class="text-gray-400 text-sm">تأسيس وتشطيب جميع أعمال الكهرباء، السباكة، وأنظمة التكييف.</p>
                 </div>
-                <div class="p-8 rounded-3xl bg-[#0f172a] border border-[#c5a880]/10 hover:border-[#c5a880]/40 transition-colors">
-                    <div class="text-[#c5a880] text-4xl mb-4">04</div>
-                    <h4 class="text-xl font-bold mb-3">الواجهات والألمنيوم</h4>
-                    <p class="text-gray-400 text-sm">تنفيذ الواجهات الزجاجية، الحوائط الستائرية، وتجاليد الألمنيوم (Cladding).</p>
-                </div>
-                <div class="p-8 rounded-3xl bg-[#0f172a] border border-[#c5a880]/10 hover:border-[#c5a880]/40 transition-colors">
-                    <div class="text-[#c5a880] text-4xl mb-4">05</div>
-                    <h4 class="text-xl font-bold mb-3">أعمال الستانلس ستيل</h4>
-                    <p class="text-gray-400 text-sm">تصميم وتنفيذ مطابخ الفنادق، المختبرات الطبية، والدرابزين للقصور.</p>
-                </div>
-                <div class="p-8 rounded-3xl bg-[#0f172a] border border-[#c5a880]/10 hover:border-[#c5a880]/40 transition-colors">
-                    <div class="text-[#c5a880] text-4xl mb-4">06</div>
-                    <h4 class="text-xl font-bold mb-3">أعمال خارجية</h4>
-                    <p class="text-gray-400 text-sm">تنفيذ أعمال الانترلوك، البرادورة، حفر الأساسات، وتمديدات الصرف.</p>
-                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="services.html" class="inline-block border border-[#c5a880] text-[#c5a880] px-6 py-2 rounded-full hover:bg-[#c5a880] hover:text-[#0f172a] transition">عرض كل الخدمات</a>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="py-24 px-6 max-w-7xl mx-auto">
+    <section class="py-24 px-6 max-w-7xl mx-auto">
         <div class="text-center mb-16">
             <h2 class="text-sm font-bold text-[#c5a880] tracking-widest mb-2">سابقة أعمالنا</h2>
             <h3 class="text-3xl font-light">شركاء النجاح</h3>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="group relative overflow-hidden rounded-3xl h-[350px]">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="group relative overflow-hidden rounded-3xl h-[350px] bg-gray-800">
+                <img src="aramco.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/50 to-transparent opacity-90"></div>
                 <div class="absolute bottom-8 right-8 left-8">
                     <h3 class="text-xl font-bold mb-1">فلل شركة أرامكو</h3>
                     <p class="text-[#c5a880] text-sm mb-3">المنطقة الشرقية</p>
-                    <p class="text-gray-300 text-xs">أعمال تأسيس سباكة صرف وتغذية لفلل خاصة.</p>
                 </div>
             </div>
 
-            <div class="group relative overflow-hidden rounded-3xl h-[350px]">
-                <img src="https://images.unsplash.com/photo-1550989460-0adf9ea622e2?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <div class="group relative overflow-hidden rounded-3xl h-[350px] bg-gray-800">
+                <img src="pande.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                 <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/50 to-transparent opacity-90"></div>
                 <div class="absolute bottom-8 right-8 left-8">
                     <h3 class="text-xl font-bold mb-1">أسواق بنده والعثيم</h3>
                     <p class="text-[#c5a880] text-sm mb-3">الرياض - حوطة بني تميم</p>
-                    <p class="text-gray-300 text-xs">تأسيس وتشطيب كهرباء وسباكة، دهانات، وأعمال خرسانية.</p>
-                </div>
-            </div>
-
-            <div class="group relative overflow-hidden rounded-3xl h-[350px]">
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/50 to-transparent opacity-90"></div>
-                <div class="absolute bottom-8 right-8 left-8">
-                    <h3 class="text-xl font-bold mb-1">مطعم وايت جاردن</h3>
-                    <p class="text-[#c5a880] text-sm mb-3">العمارية</p>
-                    <p class="text-gray-300 text-xs">أعمال حفر، مباني، تشطيبات متكاملة، وأنظمة دكت ومراوح شفط.</p>
-                </div>
-            </div>
-
-            <div class="group relative overflow-hidden rounded-3xl h-[350px]">
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-                <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/50 to-transparent opacity-90"></div>
-                <div class="absolute bottom-8 right-8 left-8">
-                    <h3 class="text-xl font-bold mb-1">مشاريع استراتيجية</h3>
-                    <p class="text-[#c5a880] text-sm mb-3">جهات متنوعة</p>
-                    <p class="text-gray-300 text-xs">أعمال للعديد من الشركات الكبرى مثل شركة حمد بن سعيدان وغيرها.</p>
                 </div>
             </div>
         </div>
+        <div class="text-center mt-12">
+            <a href="projects.html" class="inline-block border border-[#c5a880] text-[#c5a880] px-6 py-2 rounded-full hover:bg-[#c5a880] hover:text-[#0f172a] transition">تصفح معرض المشاريع</a>
+        </div>
     </section>
 
-    <footer id="contact" class="border-t border-[#c5a880]/10 bg-[#0f172a] pt-16 pb-8">
+    <footer class="border-t border-[#c5a880]/10 bg-[#0f172a] pt-16 pb-8">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
                 
                 <div>
-                    <div class="text-2xl font-bold tracking-widest text-[#c5a880] mb-4">KUNUF PROJECTS</div>
+                    <div class="text-2xl font-bold tracking-widest text-[#c5a880] mb-4">
+                        <img src="logo.png" alt="شعار كنوف" class="h-10 object-contain mb-2" onerror="this.style.display='none'">
+                    </div>
                     <p class="text-gray-400 text-sm mb-6 leading-relaxed">
                         نعمل بشغف لبناء مستقبل مشرق، نقدم حلولاً متكاملة في عالم المقاولات بأعلى معايير الجودة والإتقان.
                     </p>
@@ -178,27 +146,20 @@
                 <div>
                     <h4 class="text-lg font-bold mb-4">روابط سريعة</h4>
                     <div class="flex flex-col space-y-2 text-gray-400 text-sm">
-                        <a href="#about" class="hover:text-[#c5a880] transition">عن الشركة</a>
-                        <a href="#services" class="hover:text-[#c5a880] transition">خدماتنا</a>
-                        <a href="#projects" class="hover:text-[#c5a880] transition">مشاريعنا</a>
+                        <a href="about.html" class="hover:text-[#c5a880] transition">عن الشركة</a>
+                        <a href="services.html" class="hover:text-[#c5a880] transition">خدماتنا</a>
+                        <a href="projects.html" class="hover:text-[#c5a880] transition">مشاريعنا</a>
+                        <a href="contact.html" class="hover:text-[#c5a880] transition">تواصل معنا</a>
                     </div>
                 </div>
 
                 <div>
                     <h4 class="text-lg font-bold mb-4 text-[#c5a880]">تواصل معنا</h4>
                     <div class="flex flex-col space-y-3 text-gray-400 text-sm">
-                        <p class="flex items-center gap-2">
-                            <span>📍</span> المملكة العربية السعودية - الرياض
-                        </p>
-                        <p class="flex items-center gap-2">
-                            <span>📞</span> <a href="tel:0504946608" class="hover:text-white dir-ltr">0504946608</a>
-                        </p>
-                        <p class="flex items-center gap-2">
-                            <span>✉️</span> <a href="mailto:Info@kunufproject.com" class="hover:text-white">Info@kunufproject.com</a>
-                        </p>
-                        <p class="flex items-center gap-2">
-                            <span>🌐</span> <a href="https://www.kunufproject.com" target="_blank" class="hover:text-white">www.kunufproject.com</a>
-                        </p>
+                        <p class="flex items-center gap-2"><span>📍</span> المملكة العربية السعودية - الرياض</p>
+                        <p class="flex items-center gap-2"><span>📞</span> <a href="tel:0504946608" class="hover:text-white dir-ltr">0504946608</a></p>
+                        <p class="flex items-center gap-2"><span>✉️</span> <a href="mailto:Info@kunufproject.com" class="hover:text-white">Info@kunufproject.com</a></p>
+                        <p class="flex items-center gap-2"><span>🌐</span> <a href="https://www.kunufproject.com" target="_blank" class="hover:text-white">www.kunufproject.com</a></p>
                     </div>
                 </div>
             </div>
