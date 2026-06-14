@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا | كنوف للمشاريع</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .glow-input:focus {
+            outline: none;
+            border-color: #c5a880;
+            box-shadow: 0 0 10px rgba(197, 168, 128, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-[#0f172a] text-white font-sans pt-32 selection:bg-[#c5a880] selection:text-[#0f172a]">
+
+    <nav class="fixed top-0 w-full p-6 flex justify-between items-center z-50 bg-[#0f172a]/90 backdrop-blur-md border-b border-[#c5a880]/10">
+        <div class="text-2xl font-bold tracking-widest text-[#c5a880] flex items-center gap-2">
+            <img src="logo.png" alt="شعار كنوف" class="h-10 md:h-12 object-contain" onerror="this.style.display='none'">
+            <span class="hidden md:inline">KUNUF</span>
+        </div>
+        <div class="hidden md:flex space-x-8 space-x-reverse font-light text-sm">
+            <a href="index.html" class="hover:text-[#c5a880] transition-colors">الرئيسية</a>
+            <a href="about.html" class="hover:text-[#c5a880] transition-colors">من نحن</a>
+            <a href="services.html" class="hover:text-[#c5a880] transition-colors">خدماتنا</a>
+            <a href="projects.html" class="hover:text-[#c5a880] transition-colors">مشاريعنا</a>
+            <a href="contact.html" class="hover:text-[#c5a880] transition-colors text-[#c5a880]">تواصل معنا</a>
+        </div>
+    </nav>
+
+    <div class="text-center py-12 px-6">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 text-[#c5a880]">يسعدنا تواصلكم</h1>
+        <p class="text-gray-400 max-w-2xl mx-auto">سواء كان لديك استفسار، أو ترغب في مناقشة مشروعك القادم، نحن هنا للاستماع وتقديم أفضل الحلول الهندسية والإنشائية.</p>
+    </div>
+
+    <section class="pb-24 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            
+            <div class="space-y-8">
+                <div class="bg-[#1e293b]/30 p-8 rounded-3xl border border-[#c5a880]/10 flex items-center gap-6 hover:border-[#c5a880]/40 transition">
+                    <div class="w-16 h-16 bg-[#c5a880]/10 rounded-full flex justify-center items-center text-3xl">📍</div>
+                    <div>
+                        <h4 class="text-xl font-bold text-[#c5a880] mb-1">موقعنا</h4>
+                        <p class="text-gray-400">المملكة العربية السعودية، الرياض</p>
+                    </div>
+                </div>
+
+                <a href="tel:0504946608" class="bg-[#1e293b]/30 p-8 rounded-3xl border border-[#c5a880]/10 flex items-center gap-6 hover:border-[#c5a880]/40 transition block">
+                    <div class="w-16 h-16 bg-[#c5a880]/10 rounded-full flex justify-center items-center text-3xl">📞</div>
+                    <div>
+                        <h4 class="text-xl font-bold text-[#c5a880] mb-1">اتصل بنا</h4>
+                        <p class="text-gray-400 dir-ltr text-left">050 494 6608</p>
+                    </div>
+                </a>
+
+                <a href="mailto:Info@kunufproject.com" class="bg-[#1e293b]/30 p-8 rounded-3xl border border-[#c5a880]/10 flex items-center gap-6 hover:border-[#c5a880]/40 transition block">
+                    <div class="w-16 h-16 bg-[#c5a880]/10 rounded-full flex justify-center items-center text-3xl">✉️</div>
+                    <div>
+                        <h4 class="text-xl font-bold text-[#c5a880] mb-1">البريد الإلكتروني</h4>
+                        <p class="text-gray-400">Info@kunufproject.com</p>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/966504946608" target="_blank" class="bg-green-600/20 p-8 rounded-3xl border border-green-500/30 flex items-center gap-6 hover:bg-green-600/40 transition block">
+                    <div class="w-16 h-16 bg-green-500/20 rounded-full flex justify-center items-center text-3xl">💬</div>
+                    <div>
+                        <h4 class="text-xl font-bold text-green-400 mb-1">تحدث معنا عبر واتساب</h4>
+                        <p class="text-gray-300">متاحون للرد على استفساراتكم فوراً</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="bg-[#1e293b]/30 p-10 rounded-3xl border border-[#c5a880]/10">
+                <h3 class="text-2xl font-bold mb-8 border-r-4 border-[#c5a880] pr-3">أرسل لنا رسالة</h3>
+                
+                <form action="mailto:Info@kunufproject.com" method="post" enctype="text/plain" class="space-y-6">
+                    <div>
+                        <label class="block text-gray-400 text-sm mb-2">الاسم الكريم</label>
+                        <input type="text" placeholder="اكتب اسمك هنا..." class="w-full bg-[#0f172a] border border-gray-700 rounded-xl px-4 py-3 text-white glow-input transition-all" required>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-gray-400 text-sm mb-2">رقم الجوال</label>
+                            <input type="tel" placeholder="05X XXX XXXX" class="w-full bg-[#0f172a] border border-gray-700 rounded-xl px-4 py-3 text-white glow-input transition-all dir-rtl" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-400 text-sm mb-2">البريد الإلكتروني</label>
+                            <input type="email" placeholder="email@example.com" class="w-full bg-[#0f172a] border border-gray-700 rounded-xl px-4 py-3 text-white glow-input transition-all dir-ltr" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-gray-400 text-sm mb-2">طبيعة المشروع أو الاستفسار</label>
+                        <textarea rows="4" placeholder="اكتب تفاصيل مشروعك أو رسالتك هنا..." class="w-full bg-[#0f172a] border border-gray-700 rounded-xl px-4 py-3 text-white glow-input transition-all resize-none" required></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-[#c5a880] text-[#0f172a] font-bold text-lg py-4 rounded-xl hover:bg-white transition-colors shadow-[0_0_15px_rgba(197,168,128,0.4)] hover:shadow-[0_0_25px_rgba(197,168,128,0.6)]">
+                        إرسال الرسالة
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="border-t border-[#c5a880]/10 py-8 text-center text-gray-500 text-xs bg-[#0f172a]">
+        © 2026 جميع الحقوق محفوظة لمؤسسة كنوف للمشاريع
+    </footer>
+
+</body>
+</html>
